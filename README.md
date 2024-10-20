@@ -25,13 +25,18 @@
 
 ## 使用方法
 
-1. 运行脚本：
+1. 先准备一个第一列为所需生成图片的单词的 csv（即你准备要制卡的 csv）
+
+2. 运行脚本：
+
    ```
    python anki_card.py
    ```
 
-2. 按照提示输入您的 OpenAI Key
+3. 按照提示输入您的 OpenAI Key
 
-3. prompt = f"日本动漫风格的插图，展现'{*word*}'的概念，画面清晰可爱，具有典型的日本动画特征"。即默认 prompt，可以自行修改，生成结果取决于 openai
+4. prompt = f"日本动漫风格的插图，展现'{*word*}'的概念，画面清晰可爱，具有典型的日本动画特征"。即默认 prompt，可以自行修改，生成结果取决于 openai
 
-4. anki_media_folder = '/Users/farmer/Library/Application Support/Anki2/账户 1/collection.media' ，该行代码的目的是为了将图片复制到 anki 媒体文件夹下，**请各位自行填写，否则会写入失败**
+5. anki_media_folder = '/Users/farmer/Library/Application Support/Anki2/账户 1/collection.media' ，该行代码的目的是为了将图片复制到 anki 媒体文件夹下，**请各位自行填写，否则会写入失败**
+
+6. 最后会把图片地址填入一开始的 csv 文件里，请选择在第几列
